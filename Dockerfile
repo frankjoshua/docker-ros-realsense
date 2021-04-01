@@ -39,8 +39,7 @@ RUN apt-get update && \
 #     apt-get install -y ros-$ROS_DISTRO-rtabmap-ros && \
 #     rm -rf /var/lib/apt/lists/*
 
-# Need to have an entry point that sources the catkin workspace
-ADD ros_entrypoint.sh /
+COPY realsense.launch /ros.launch
 
 CMD ["roslaunch", "--wait", "/ros.launch"]
 # CMD ["roslaunch", "--wait", "realsense2_camera", "rs_multiple_devices.launch"]
