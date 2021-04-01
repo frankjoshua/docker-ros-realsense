@@ -27,6 +27,11 @@ Use [build.sh](build.sh) to build the docker containers.
 ./build.sh -t frankjoshua/ros-realsense -l
 ```
 
+## Architectures
+
+x86 and arm64
+arm32 is not supported but should be possible with some work.
+
 ## Testing
 
 Github Actions expects the DOCKERHUB_USERNAME and DOCKERHUB_TOKEN variables to be set in your environment.
