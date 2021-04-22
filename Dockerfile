@@ -7,5 +7,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY realsense.launch ros.launch
+COPY /app/ros.launch /app/ros.launch
 CMD ["roslaunch", "--wait", "ros.launch"]
